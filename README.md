@@ -1,0 +1,1 @@
+Some practice exercises to work on code readability and cleanliness 

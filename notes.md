@@ -53,3 +53,21 @@ Tech debt is the accumulation of inefficient processes over time.
 ### During a code review
 - Make your code look clean and tidy before you present tit to people
 - get a second pair of eyes before you present and work with someone to help clean it up
+## How to Refactor
+### Checklist of refactoring done the right way
+- The code should become cleaner and easier to read. No point in wasting your time to refactor if it doesnt even help readability
+- New functionality should not be created during refactoring. It will create confounds
+- All existing tests must pass after refactoring
+    - If tests break down, you either messed up refactoring or your tests were too low-level
+## Code Smells (what??)
+think of smells as the types of broken code that accumulate tech debet
+### Bloaters
+- code, methods, or classes that are just extremely large. Theyre difficult to wokr with, can become very messy, and inefficent. 
+### Object Orientation Abusers
+- these happen when object oriented programming princeples arent followed, such as reducing redundancy to try to increase readability
+### Change Preventers
+- this happens when you have a lot of cross-interference between classes in your code. For example, changing one thing ends up breaking a feature somewhere else completely unrelated
+### Dispensables
+- dead code, usesless dataclasses, comments that cause lutter, duplicate code
+### Couplers
+- classes are coupled together and seemingly useless
